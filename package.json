@@ -1,0 +1,47 @@
+{
+
+  "name": "learn-fullstack-javascript",
+  "version": "1.0.0",
+  "description": "Self code for the course \"Learn Fullstack Javascript\"",
+  "main": "index.js",
+  "scripts": {
+    "start" : "nodemon --exec babel-node server.js",  //executing babel-node instead of node, so we can write JSX too
+        //nodemon will render the 'node server', which is put in server.js
+    "dev" : "webpack -wd" //to run it in 'watch', as well as 'development' mode
+      //script to transform the source files into bundle file for the browsers
+      //*We can name the script according to liking
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdityaGupta150/learn-fullstack-javascript.git"
+  },
+  "author": "Aditya Gupta",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/AdityaGupta150/learn-fullstack-javascript/issues"
+  },
+  "homepage": "https://github.com/AdityaGupta150/learn-fullstack-javascript#readme",
+
+  "dependencies": {
+    "express" : "^4.16.4",
+    "mongodb" : "^3.1.13",
+    "prop-types" : "latest",  //Previously used to be part of React, 
+    "react" : "latest",
+    "react-dom" : "latest"
+  },
+
+  "devDependencies": {
+    "@babel/node" : "latest",
+          //'@' is a name-scoping in node packages
+    "@babel/core" : "latest", //wrt. npm, these 'packages' are 'scoped' under the main @babel package
+    "@babel/plugin-proposal-class-properties" : "",
+    "@babel/preset-env" : "latest",
+    "@babel/preset-react" : "latest",
+    "babel-loader" : "latest",
+    "eslint" : "latest",  //Looks for problematic patterns of code in JavaScript
+    "eslint-plugin-react" : "latest",
+    "nodemon" : "latest",
+    "webpack" : "latest",
+    "webpack-cli" : "latest"
+  }
+}

@@ -1,0 +1,6 @@
+1. We also need a script to transform the source files into a bundle file for the browser. Let's name the script dev (under scripts in package.json), and the command webpack -wd(to also run in watch mode, and development mode as well)
+
+2.  .public/ -> static assets like HTML, CSS, JS, that will load on clients
+    .api/ -> "backend" API servers
+    .src/ -> for our 'modular source' JS files
+
